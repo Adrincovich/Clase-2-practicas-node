@@ -1,0 +1,3 @@
+# si queremos seleccionar una carpeta se pone  "./ " directorio
+# si queremos que seleccione todas las carpetas con ese nombre directamente se pone el nombre
+node_modules
