@@ -30,7 +30,7 @@ console.log(findVariable);
 
 
 // a diferencia del find que busca, este filtra en un array
-const filterVariable = array1.find(item => item == "b")
+const filterVariable = array1.filter(item => item == "b")
 
 console.log(filterVariable);
 
