@@ -2,6 +2,7 @@
 // Dado el siguiente array de alumnos de una clase Obtener un array con los números de alumno de aquellos
 // alumnos que hayan aprobado la materia. Para aprobar la matería la nota final debe ser mayor a 6.
 
+
 const alumnos = [
     { numAlumno: "1234/0", nombre: "maria", nota: 7 },
     { numAlumno: "4459/2", nombre: "juan", nota: 3 },
@@ -34,20 +35,21 @@ const productos = [
     { id: "5", nombre: "mochilas", stock: 4 }
 ]
 
-function chequeo() {
-    productos.forEach((a) =>{
+//en foreach no va return
+
+
+    const asdasd = productos.forEach((a) =>{
         if (a.stock == 0) {
-            return a.agotado = true
+             a.agotado = true
         }if (a.stock > 0 ){
-            return a.agotado = false
+             a.agotado = false
         }
+        console.log(a)
     })
-}
 
-productos.map(item => item.agotado = "")
-         .map(chequeo)
+        //  .map(chequeo)
 
-//console.log(productos)
+// console.log(asdasd)
 
 
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
@@ -71,6 +73,13 @@ const jugadores = [
 ]
 
 
+const jugadoresSospechosos = jugadores.filter(item => item.inventario
+                                                          .some(inv => inv === "Katana de fuego"))  //quedan solo jugadores con katana
+                                      .map(element => element.ID)
+
+// console.log(jugadoresSospechosos)
+
+
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
 
 
@@ -83,7 +92,7 @@ const silabas = ["¡Ho", "la, ", "mun", "do! ", "¿To", "do ", "bien? ", "Me ", 
 
 const palabras = silabas.join("")
 
-console.log(palabras)
+// console.log(palabras)
 
 
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
