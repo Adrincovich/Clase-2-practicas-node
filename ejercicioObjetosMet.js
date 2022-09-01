@@ -78,7 +78,12 @@ const jugadores = [
 // Nuestro software de reconocimiento de voz funciona de una forma un poco particualar, y el texto reconocido
 // nos lo envía en un arreglo de silabas. Dado el siguiente array, obtener un string con todo el texto de corrido.
 
-const silabas = ["¡Ho", "la, ", "mun", "do! ", "¿To", "do", "bien?", "Me", "a", "le", "gro."]
+const silabas = ["¡Ho", "la, ", "mun", "do! ", "¿To", "do ", "bien? ", "Me ", "a", "le", "gro."]
+
+
+const palabras = silabas.join("")
+
+console.log(palabras)
 
 
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
@@ -98,7 +103,7 @@ const pedidos = [
 
 const pedidosIncluyeExtras = pedidos.filter(pedido => pedido.extras)
 
-console.log(pedidosIncluyeExtras)
+// console.log(pedidosIncluyeExtras)
 
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
 
