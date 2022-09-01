@@ -24,7 +24,7 @@ const filterAlumnos = alumnos
 
 // 2. Stock agotado
 // Dado el siguiente array de productos en stock, agregar a cada producto un atributo booleano agotado
-// en true si el stock es mayor a 0, caso contrario false.
+// en true si el stock es 0, caso contrario false.
 
 const productos = [
     { id: "1", nombre: "lapiceras", stock: 164 },
@@ -34,21 +34,20 @@ const productos = [
     { id: "5", nombre: "mochilas", stock: 4 }
 ]
 
-
 function chequeo() {
     productos.forEach((a) =>{
         if (a.stock == 0) {
             return a.agotado = true
         }if (a.stock > 0 ){
             return a.agotado = false
-          }
-        })
+        }
+    })
 }
 
 productos.map(item => item.agotado = "")
          .map(chequeo)
 
-console.log(productos)
+//console.log(productos)
 
 
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
@@ -97,6 +96,9 @@ const pedidos = [
     { id: "1", pedido: "empanadas" },
 ]
 
+const pedidosIncluyeExtras = pedidos.filter(pedido => pedido.extras)
+
+console.log(pedidosIncluyeExtras)
 
 // -----------°-----------°-----------°-----------°-----------°-----------°-----------°-----------°
 
@@ -110,7 +112,7 @@ const usuario1perfil = { nombre: "pepe", edad: 27, profesion: "programador" }
 
 const usuario1Completo = {...usuario1, ...usuario1perfil}
 
-// console.log(usuario1Completo)
+//console.log(usuario1Completo)
 
 
 
