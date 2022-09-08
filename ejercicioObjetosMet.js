@@ -38,7 +38,7 @@ const productos = [
 //en foreach no va return
 
 
-    const asdasd = productos.forEach((a) =>{
+    const agregarStock = productos.forEach((a) =>{
         if (a.stock == 0) {
              a.agotado = true
         }if (a.stock > 0 ){
